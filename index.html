@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./main.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+
+</head>
+
+<body class="w-full h-screen flex justify-center items-center">
+
+  <main
+    class="flex flex-col w-full max-w-[864px] h-5/7 bg-white justify-items-start p-6 md:p-16 gap-10 mx-5 md:mx-none">
+    <form class="flex justify-between md:justify-start gap-5 w-full">
+      <div class="input-group flex flex-col items-start gap-2 md:w-1/4">
+        <label for="dd" class="tracking-widest">
+          DAY
+        </label>
+        <input type="text" id="dd" name="dd" pattern="[1-9]" placeholder="DD"
+          class="border rounded-md py-3 px-4 md:p-5 w-full">
+        <p id="dd-err" class="warning drop-shadow-md select-none opacity-0">This field is required</p>
+      </div>
+
+      <div class="input-group flex flex-col items-start gap-2 md:w-1/4">
+        <label for="mm" class="tracking-widest">
+          MONTH
+        </label>
+        <input type="text" id="mm" name="mm" placeholder="MM" class="border rounded-md py-3 px-4 md:p-5 w-full">
+        <p id="mm-err" class="warning drop-shadow-md select-none opacity-0">This field is required</p>
+      </div>
+
+      <div class="input-group flex flex-col items-start gap-2 md:w-1/4">
+        <label for="yy" class="tracking-widest">
+          YEAR
+        </label>
+        <input type="text" id="yy" name="yy" placeholder="YYYY" class="border rounded-md py-3 px-4 md:p-5 w-full">
+        <p id="yy-err" class="warning drop-shadow-md select-none opacity-0">This field is required</p>
+      </div>
+    </form>
+
+    <div class="min-h-[2px] w-full hr flex align-center justify-center relative">
+      <span id="arrow"
+        class="w-14 h-14 p-4 md:w-24 md:h-24 md:p-6 hover:bg-black hover:cursor-pointer transition flex align-center justify-center rounded-full absolute md:right-0 bottom-1/2 translate-y-1/2">
+        <img src="assets/images/icon-arrow.svg" alt="arrow down">
+      </span>
+    </div>
+
+    <div class="flex flex-col gap-5 w-full" id="timer-con">
+      <div class="flex items-center">
+        <span class="text-5xl md:text-8xl tracking-widest">--</span>
+        <h1 class="text-5xl md:text-8xl">years</h1>
+      </div>
+
+      <div class="flex items-center">
+        <span class="text-5xl md:text-8xl tracking-widest">--</span>
+        <h1 class="text-5xl md:text-8xl">months</h1>
+      </div>
+
+      <div class="flex items-center">
+        <span class="text-5xl md:text-8xl tracking-widest">--</span>
+        <h1 class="text-5xl md:text-8xl">days</h1>
+      </div>
+    </div>
+
+  </main>
+
+  <div class="attribution absolute bottom-5">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://miguelnerok2023.webflow.io">Miguel_Nerok</a>.
+  </div>
+
+  <script type="module" src="./app.js"></script>
+</body>
+
+</html>

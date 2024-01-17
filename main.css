@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url(assets/fonts/Poppins-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins-Italic';
+    src: url(assets/fonts/Poppins-Italic.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url(assets/fonts/Poppins-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins-BoldItalic';
+    src: url(assets/fonts/Poppins-BoldItalic.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins-ExtraBold';
+    src: url(assets/fonts/Poppins-ExtraBold.ttf);
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins-ExtraBoldItalic';
+    src: url(assets/fonts/Poppins-ExtraBoldItalic.ttf);
+    font-weight: 800;
+    font-style: normal;
+}
+
+html,
+body {
+    font-family: 'Poppins-Regular';
+    font-size: 1rem;
+    background-color: hsl(0, 0%, 86%);
+}
+
+p {
+    font-family: 'Poppins-Italic';
+}
+
+#timer-con span {
+    font-family: 'Poppins-ExtraBoldItalic';
+}
+
+h1 {
+    font-family: 'Poppins-ExtraBoldItalic';
+}
+
+input {
+    font-size: 32px;
+    color: hsl(0, 1%, 44%);
+}
+
+input .error {
+    border-color: hsl(0, 100%, 67%);
+}
+
+input:focus-visible {
+    caret-color: hsl(259, 100%, 65%);
+    outline-color: hsl(259, 100%, 65%);
+}
+
+
+label,
+input {
+    font-family: 'Poppins-Bold' !important;
+}
+
+label,
+.warning {
+    color: hsl(0, 100%, 67%);
+}
+
+main {
+    border-radius: 32px;
+    border-bottom-right-radius: 25%;
+}
+
+span {
+    color: hsl(259, 100%, 65%);
+}
+
+.hr {
+    background: hsl(0, 0%, 94%);
+}
+
+.hr span {
+    background: hsl(259, 100%, 65%);
+}
+
+@media only screen and (max-width: 750px) {
+    input {
+        font-size: 1.2rem;
+    }
+
+    label {
+        font-size: .9rem;
+    }
+
+    .warning {
+        font-size: .8rem;
+    }
+}
